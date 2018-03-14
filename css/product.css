@@ -1,0 +1,390 @@
+/*---------导航部分-----------*/
+nav{
+	height: 80px;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.nav-out{
+	width: 1120px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0.1px;
+}
+h1{
+	float: left;
+	margin-left: 173px;
+	height: 80px;
+	width: 100px;
+	font-size: 0;
+	background: url(../img/logo1.png) no-repeat 0 center;
+	background-size: 100%;
+}
+h1 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nav-ul{
+	float: left;
+	margin-top: 20px;
+	margin-left: 70px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0.1px;
+
+}
+.nav-ul li{
+	float: left;
+	padding-left: 38px;
+	font-size: 14px;
+	width: 132px;
+}
+.nav-ul li a{
+	color: black;
+}
+.nav-ul li:first-child a{
+	color: #d92443;
+}
+.nav-ul li>a:hover{
+	color: #d92443;
+}
+.underline{
+	display: block;
+	width: 56px;
+	height: 2px;
+	background: #d92443;
+	margin-left: 0;
+}
+.last-li{
+	float: left;
+	height: 36px;
+	width: 118px;
+	background: rgba(99,99,99,.4) url(../img/shu.png) no-repeat 50px center;
+	margin-top: 20px;
+	margin-left: 60px;
+	border-radius: 4px;
+	line-height: 36px;
+	display: none;
+}
+/*---------banner------------------*/
+.banner{
+	width: 100%;
+	height: 384px;
+	background: url(../img/productbanner.jpg) left center no-repeat;
+	background-size: 100% 100%;
+	margin-top: 80px;
+}
+/*--------内容部分----------*/
+.content-box{
+	height: 1055px;
+	width: 100%;
+	background: #f7f7f7;
+	padding: 0.1px;
+}
+.content-box1{
+	height: 1020px;
+	width: 1100px;
+	margin: 15px auto;
+	background: white;
+}
+/*------------左边-----------*/
+.content-left{
+	width: 190px;
+	height: 100%;
+	float: left;
+	border-right: 1.5px solid #e0e0e0;
+}
+.content-left1-title,.content-left2-title,.content-left3-title{
+	line-height:65px;
+	text-indent: 38px;
+	font-size: 24px;
+	cursor: pointer;	
+}
+.content-left1-title{
+	background: url(../img/lefticon2.png) no-repeat 18px center;
+}
+.content-left2-title,.content-left3-title{
+	background: url(../img/lefticon1.png) no-repeat 18px center,url(../img/productleftbg.png) no-repeat center top;	
+}
+.content-left1-list{
+	width: 100%;
+	line-height: 18px;
+	font-size: 18px;
+			
+}
+ .content-left2-list,.content-left3-list{
+ 	display: none;
+ 	width: 100%;
+	line-height: 18px;
+	font-size: 18px;
+ } 
+.content-left li{
+	margin-bottom: 25px;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+.content-left li:hover{
+	color: #d92443 !important;
+}
+/*-----------右边-------*/
+.content-right{
+	float: left;
+	padding-left: 15px;
+	width: 910px;	
+	overflow: hidden;
+}
+.content-right-list{
+	width: 100%;
+	height: 1020px;
+	background: url(../img/productlistbgs.png) no-repeat 1px 56px;
+	display: none;
+}
+.content-right-list2{background: none;}
+.content-right-listtitle{
+	line-height: 56px;
+	font-size: 18px;
+	color: #d92443;
+	text-indent: 10px;
+}
+.content-leftli1{
+	color: #d92443;
+}
+.content-right-listbot{
+	height: 542px;
+	width: 863px;	
+}
+.content-right-listimg{
+	float: left;
+	margin: 30px 10px 0 20px;
+	
+}
+/*-------边框比较大的块----------*/
+.content-right-listimg1{
+	float: left;
+	margin: 100px 10px 0 20px;
+}
+.content-right-listbotright-bot1{
+	width: 385px;
+	height: 670px;
+	position: relative;
+	
+}
+.content-right-list1{
+	width: 100%;
+	height: 1020px;
+	background: url(../img/productlistbgl.png) no-repeat 1px 56px;
+	display: none;
+}
+/*-----------------------*/
+.content-right-listbotright{
+	float: right;
+	width: 377px;
+	margin-top: 10px;
+	margin-right: 9px;
+}
+.content-right-listbotright-top{
+	line-height: 84px;
+	width: 100%;
+	border-bottom: 1.5px solid #e9e9e9;
+	text-align: center;
+	color: #333333;
+	font-size: 25px;
+}
+.content-right-listbotright-bot{
+	width: 385px;
+	height: 450px;
+	position: relative;	
+}
+
+.content-p-content{
+	width: 320px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);    /* for Chrome || Safari */
+    -moz-transform: translate(-50%, -50%);       /* for Firefox */           
+    -ms-transform: translate(-50%, -50%);        /* for IE */         
+    -o-transform: translate(-50%, -50%); 
+}
+.content-right-listbotright-botp{
+	line-height: 30px;
+	font-size: 14px;
+}
+.content-isnone{
+	display: block;
+}
+/*----------软件产品显示区域--------*/
+.allProduct{
+	width:100%;
+	
+}
+.allProduct li{
+	float: left;
+	margin:0 13px 35px 0;
+}
+/*--------云平台区域-------*/
+.scheme{
+	width: 100%;
+}
+.scheme img{
+	margin-left: 16px;
+	border:1px solid #ecebeb;
+	padding: 8px;
+}
+/*--------合作伙伴----------*/
+.partner{
+	clear: both;
+	width: 1120px;
+	height: 414px;
+	margin: 0 auto;
+}
+.partner-top{
+	width: 670px;
+	height: 204px;
+	padding-top: 70px;
+	margin: 0 auto;
+	
+}
+.partner-left{
+	height: 4px;
+	width: 141px;
+	background: #474747;
+	float: left;
+	margin-top: 10px;
+}
+.partner-mid{
+	font-size: 25px;
+	color: #6e6e6e;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 120px;
+	float: left;
+	
+}
+.partner-right{
+	height: 4px;
+	width: 141px;
+	background: #474747;
+	margin-top: 10px;
+	float: left;
+}
+.partner-bot{
+	margin: 0 auto;
+	height: 156px;
+	width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.partner-bot div{
+	flex-basis: 20%;
+}
+
+/*-------------页脚部分-----------------*/
+
+.footer{
+	height: 604px;
+	width: 100%;
+	background: #2e2e2e;
+}
+.footer-top{
+	margin: 0 auto;
+	height: 374px;
+	width: 1120px;
+	display: flex;
+	color: #d8d8d8;
+	justify-content: space-between;
+	
+}
+.footer-right{
+	width: 360px;
+}
+.footer-title{
+	height: 17px;
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 85px;
+	margin-bottom: 30px;
+}
+.footer-content{
+	font-size: 14px;
+	line-height: 31px;
+}
+hr{
+	color: #ccc;
+}
+.footer-bot{
+	height: 228px;
+	width: 1120px;
+	margin: 0 auto; 
+	color: #d8d8d8;
+	font-size: 14px;
+	padding-top: 83px;	
+}
+.footer-bot-p1,.footer-bot-p2{
+	text-align: center;
+}
+.clickmap1,.clickmap2{
+	color: #d14f4f;
+	margin-left: 15px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/*---------遮布、弹出地图---------------*/
+.coverWrap{
+	width: 100%;
+	height: 100%;
+	background: rgba(90,90,90,.6);
+	position:  fixed;
+	top: 0;
+	z-index: 4;
+	display: none;
+}
+.Map{
+	height: 500px;
+	width: 1000px;
+	margin:30px auto 0;
+	border-radius: 10px 10px 0 0;
+}
+.mapFoot{
+	height: 45px;
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 0 0 10px 10px;
+	padding: 0.1px;
+}
+.closeCover{
+	height: 30px;
+	width: 50px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	border: 1px solid blue;
+	border-radius: 8px;
+	margin: 7px auto;
+	color: fuchsia;
+	font-size: 14px;
+}
+
+.closeCover:hover{
+	background: #C0C0C0;
+	color: mediumvioletred;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

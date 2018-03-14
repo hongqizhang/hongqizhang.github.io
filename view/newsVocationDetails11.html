@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>LoRa VS NB-IoT 大盘点</title>
+		<link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/newsvocation.css"/>
+		<script src="../js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/newsvocation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=yOttaDzPxI2g9lXAVTzFHYplp6K5ppGp" type="text/javascript"></script>
+	</head>
+	<body>
+		<!---------头部------------->
+		<div class="header">
+			<div class="nav">
+				<div class="nav-out">
+					<h1><a href="../index.html">北京泛维智联信息技术有限公司</a></h1>
+					<ul class="nav-ul">
+						<li>
+							<a href="product.html">产品中心</a>
+							<span class="underline"></span>							
+						</li>
+						<li><a href="newscenter.html">新闻中心</a></li>
+						<li><a href="wisdomCity.html">智慧城市</a></li>
+						<li><a href="wisdomYard.html">智慧园区</a></li>
+						<li><a href="us.html">关于我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="headimg"></div>
+		</div>
+		<!----------news------------->
+		<div class="newsout">
+			<div class="newscontent">
+				<div class="news-left">
+					<p class="news-left1"><a href="newscenter.html">公司动态</a></p>
+					<p class="news-left2"><a href="newsvocation.html">行业资讯</a></p>
+				</div>
+				<div class="news-right">
+					<h3 class="newsDetailsTitle">LoRa VS NB-IoT 大盘点</h3>
+					<div class="newsDetails">
+						<div class="newsDetailsContent">
+							<div class="newsDetailsTitle_2">
+								1&nbsp; 引言
+							</div>
+							<p>物联网应用需要考虑许多因素，例如节点成本，网络成本，电池寿命，数据传输速率（吞吐率），延迟，移动性，网络覆盖范围以及部署类型等。可以说没有一种技术可以满足IoT所有的需求。NB-IoT和LoRa两种技术具有不同的技术和商业特性，所以在应用场景方面会有不同。这里会针对二者的区别进行阐述，并且对各自适合的应用场景进行说明。</p>
+							<div class="newsDetailsImg">
+								<img src="../img/newsVocationDetails16.png"/>
+							</div>
+							<div class="newsDetailsTitle_2">
+								2 &nbsp;频段，服务质量和成本
+							</div>
+							<p>LoRa工作在1GHz以下的非授权频段，故在应用时不需要额外付费。NB-IoT和蜂窝通信使用1GHz以下的授权频段。处于500MHz和1GHz之间的频段对于远距离通信是最优的选择，因为天线的实际尺寸和效率是具有相当优势的。 LoRaWAN使用免费的非授权频段，并且是异步通信协议，对于电池供电和低成本是最佳的选择。LoRa 和 LoRaWAN 协议，在处理干扰、网络重叠、可伸缩性等方面具有独特的特性，但却不能提供像蜂窝协议一样的服务质量（QoS）。据悉授权的Sub-GHz频段的竞拍，每MHz价格超过5亿美金。蜂窝网络和NB-IoT出于对服务质量（QoS）的考虑，并不能提供类似LoRa一样的电池寿命。由于QoS和高昂的频段使用费，需要确保QoS的应用场景推荐使用蜂窝网络和NB-IoT，而低成本和大量连接是首选项的话LoRa是不错的选择，如下图。</p>
+							<div class="newsDetailsImg">
+								<img src="../img/newsVocationDetails17.png"/>
+							</div>
+							<div class="newsDetailsTitle_2">
+								3&nbsp;电池寿命和下行延迟
+							</div>
+							<p>蜂窝网络设计的理念是最优的频段利用率，相应的就牺牲了节点成本和电池寿命。相反，LoRaWAN节点是为了低成本和长电池寿命而生，在频段利用率方面有一定的欠缺。 关于电池寿命方面有两个重要的因素需要考虑，节点的电流消耗（峰值电流和平均电流）以及协议内容。LoRaWAN是一种异步的基于ALOHA的协议，也就是说节点可以根据具体应用场景需求进行或长或短的睡眠，而蜂窝等同步协议的节点必须定期地联网。例如，现在市面上的手机工作时每1.5s必须与网络进行同步。在NB-IoT中，这种同步变少但是仍然在定期进行，这样就额外的消耗了电池的电量。 在蜂窝网络中调制是充分利用频段的有效手段，但是从节点的角度这并不是有效的。蜂窝的调制（OFDM或者FDMA）需要一个线性的发射器来产生调制信号，而一个线性的发射器需要的峰值电流比非线性调制多几个数量级，越高的峰值电流会消耗电池更多的电量。 但同步的通信协议在较短的下行延迟方面具有优势，同时NB-IoT可以为需要大量数据吞吐量的应用提供快速的数据传输速率。而LoRaWAN的Class B 通过定期地（编程实现）唤醒终端以收取下行消息而缩短了下行通信的延迟。 所以对于需要频繁通信、较短的延迟或者较大数据量的应用来说NB-IoT或许是更好的选择，而对于需要较低的成本、较高的电池寿命和通信并不频繁的场景来说LoRa更好。</p>
+							<div class="newsDetailsImg">
+								<img src="../img/newsVocationDetails18.png"/>
+							</div>
+							<div class="newsDetailsTitle_2">
+								4&nbsp;网络覆盖和部署时间表
+							</div>
+							<p>节点工作的本质需求是网络的覆盖，对于NB-IoT来说一个明显的优势是可以通过升级现有的网络设施来提供网络部署，但是这种升级仅限于某些特定的4G/LTE基站，并且花费较高。并且这种升级仅适于已经具有4G/LTE覆盖的城区，对于偏远或者郊区等没有4G覆盖的来说并不合适。NB-IoT标准在16年6月公布，预计模块将于17年上半年量产发布。除网络部署之外，相应的商业化和产业链的建立还需要更长的时间和努力去探索，但是市场需求和机会是否会等待呢？ LoRa的整个产业链相对已经较为成熟了，产品也处于“蓄势待发”的状态，同时全球很多国家正在进行或者已经完成了全国性的网络部署。LoRa产业链一个突出优点是每个环节的成员都掌握着自主性，一些大公司正在计划创造一种混合型的商业模型来部署网络和应用。但NB-IoT产业链会受到频段、运营商等限制。</p>
+							<div class="newsDetailsTitle_2">
+								5&nbsp;设备成本,网络成本和混合模型
+							</div>
+							<p>对终端节点来说，LoRaWAN协议比NB-IoT更简单，更容易开发并且对于微处理器的适用和兼容性更好。NB-IoT的调制机制和协议比较复杂，这就需要更复杂的电路和更多的花费，同时NB-IoT和3GPP一样是要收税的。现阶段对于一部手机的税费大概是5美元，但这对于物联网设备来说显得太昂贵了，而且如果贸然的降低税费会引起手机等移动通信市场的价格混乱。所以3GPP组织如何权衡IoT和移动通信两方面税费问题也个大问题。 低成本、技术相对成熟的LoRa模块已经可以在市场上找到了，并且升级版还会接踵而至。LoRa联盟没有过多版权和税费的限制使得在LoRa产业链下模块低于4美元是十分可观的。现在市场上的LoRa模块价格一般在7-10美元，但是随着技术的成熟度提高4-5美元并不是大问题。而现在一个LTE模块的价格却很难低于20美元。 相对于传统的只依靠“铁塔”部网，对于IoT和LPWAN来说部署需要使用不同模型以降低支出和运营成本。LoRaWAN部署花费更少，因为可以利用传统的信号塔、工业基站甚至是便携式家庭网关来进行。现阶段一个塔式的基站价格大概是1000美元，工业基站价格低于500美元，而家庭式的网关只需要100美元左右。但是对于NB-IoT来说，升级现有的4G LTE基站的价格保守估计每个不少于15000美元。</p>
+							<div class="newsDetailsTitle_2">
+								6&nbsp;应用举例
+							</div>
+							<p>如之前提到的，没有一种技术可以同时满足IoT应用的所有需求。下面将通过几个具体的应用实例来分析NB-IoT 和LoRa 各自适合的应用场景。</p>
+							<div class="newsDetailsTitle_3">
+								<p>智能电表</p>
+							</div>
+							<p>在智能电表领域相关的公司和部门需要高速率的数据传输、频繁的通信和低延迟。由于电表是由电源供电的，所以并没有超低功耗和长电池使用寿命的需求。并且还需要对线网进行实时监控以便发现隐患时及时处理。LoRaWAN的ClassＣ可以实现低延迟，但是对于高传输速率和频繁通信的需求NB-IoT是更适合于智能电表的选择。并且电表一般安装在人口密集的地区的固定位置，所以对于运营商部网也较为容易。</p>
+							<div class="newsDetailsTitle_3">
+								<p>智慧农业</p>
+							</div>
+							<p>对农业来说，低功耗低成本的传感器是迫切需要的。温湿度、二氧化碳、盐碱度等传感器的应用对于农业提高产量、减少水资源的消耗等有重要的意义，这些传感器需要定期地上传数据。LoRa十分适用于这样的场景。而且很多偏远的农场或者耕地并没有覆盖蜂窝网络，更不用说4G/LTE了，所以NB-IoT并不如LoRa一样适合于智慧农业。</p>
+							<div class="newsDetailsTitle_3">
+								<p>自动化制造</p>
+							</div>
+							<p>工厂机器的运行需要实时的监控，不仅可以保证生产效率而且通过远程监控可以提高人工效率。在工厂的自动化制造和生产中，有许多不同类型的传感器和设备。一些场景需要频繁的通信并且确保良好的服务质量（QoS），这时NB-IoT是较为合适的选择。而一些场景需要低成本的传感器配以低功耗和长寿命的电池来追踪设备、监控状态，这时LoRa便是合理的选择。所以对于自动化生产制造的多样性来说，NB-IoT 和LoRa都有用武之地。</p>
+							<div class="newsDetailsTitle_3">
+								<p>智能建筑</p>
+							</div>
+							<p>对于建筑的改造，加入温湿度、安全、有害气体、水流监测等传感器并且定时的将监测的信息上传，方便了管理者的监管同时更方便了用户。通常来说这些传感器的通信不需要特别频繁或者保证特别好的服务质量，同时便携式的家庭式网关便可以满足需要。所以该场景LoRa是比较合适的选择。</p>
+							<div class="newsDetailsTitle_3">
+								<p>零售终端（POS）</p>
+							</div>
+							<p>零售终端（POS）系统往往需要较频繁和高质量的通信，而且这些设备通常有专门供电的设备，所以对于较长的电池使用寿命没有要求。同时对于通信的时效性和低延迟要求较高。所以出于以上考虑NB-IoT比较适合于本应用。</p>
+							<div class="newsDetailsTitle_3">
+								<p>物流追踪</p>
+							</div>
+							<p>追踪或者定位市场的一个重要的需求就是终端的电池使用寿命。物流追踪可以作为混合型部署的实际案例。物流企业可以根据定位的需要在需要场所部网，可以是仓库或者运输车辆上，这时便携式的基站便派上了用场。LoRa可以提供这样的部署方案，而对于NB-IoT来说追踪范围过大基站的铺设是很大的问题。同时LoRa有一个特点，在高速移动时通信相对于NB-IoT更稳定。出于以上的考虑，LoRa更适合于物流追踪。</p>
+							<div class="newsDetailsTitle_2">
+								7&nbsp;总结
+							</div>
+							<div class="newsDetailsTitle_3">
+								<p>IoT领域并没有一个没有争议的选择，每一个应用场景都有自己独特的需求和考虑。本文阐述了NB-IoT和LoRa二者各自的特点和商业模式，相信二者在IoT市场上都将有一席之地。</p>
+							</div>
+							<p class="foot-state">本资料是LoRa联盟（LoRa Alliance）官方的白皮书，作者是Hardy Schmidbauer。</p>
+							<p class="foot-state">原文链接：<a href="https://www.lora-alliance.org/portals/0/documents/whitepapers/LoRa-Alliance-Whitepaper_NBIoT_vs_LoRa.pdf" target="_blank">https://www.lora-alliance.org/portals/0/documents/whitepapers/LoRa-Alliance-Whitepaper_NBIoT_vs_LoRa.pdf</a></p>
+							<p class="foot-state">翻译作者：朱小星</p>
+							<p class="foot-state">链接：<a href="https://zhuanlan.zhihu.com/p/22693510" target="_blank">https://zhuanlan.zhihu.com/p/22693510</a></p>
+							<p class="foot-state">来源：知乎</p>
+							<p class="foot-state">著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------->
+		<div style="width: 100%;height: 1px;margin-top: 108px;"></div>
+		<hr />
+		<!-----------合作伙伴------------------->
+		<div class="partner">
+			<div class="partner-top">
+				<span class="partner-left"></span>
+				<p class="partner-mid">合作企业</p>
+				<span class="partner-right"></span>
+			</div>
+			<div class="partner-bot">
+				<div><img src="../img/partner1.gif" alt="汉邦高科" title="汉邦高科"/></div>
+				<div><img src="../img/partner2.gif" alt="SEMTECH" title="SEMTECH"/></div>
+				<div><img src="../img/partner3.png" alt="中国电子" title="中国电子"/></div>
+				<div><img src="../img/partner4.gif" alt="TRS" title="TRS"/></div>
+				<div><img src="../img/partner5.gif" alt="TCL" title="TCL"/></div>
+				<div><img src="../img/partner6.gif" alt="LoRa" title="LoRa"/></div>
+				<div><img src="../img/partner7.gif" alt="CECT" title="CECT"/></div>
+				<div><img src="../img/partner8.gif" alt="神州数码" title="神州数码"/></div>
+				<div><img src="../img/partner9.gif" alt="海尔" title="海尔"/></div>
+				<div><img src="../img/partner10.gif" alt="太极" title="太极"/></div>					
+			</div>
+		</div> 
+			
+		<!----------底部--------------->
+		<div class="footer">
+			<div class="coverWrap">				
+				<div class="Map" id="myMap"></div>
+				<div class="mapFoot">
+					<div class="closeCover">关闭</div>
+				</div>
+			
+			</div>
+			<div class="footer-top">
+				<div class="footer-left">
+					<p class="footer-title">经营理念与价值</p>
+					<p class="footer-content">企业宗旨：万物互联，开辟物联网新时代</p>
+					<p class="footer-content">企业文化：创新、协作、和谐、敬业</p>
+					<p class="footer-content">经营理念：诚信为本 共赢为先 开拓创新 务实进取</p>
+					<p class="footer-content">发展理念：以人为本、快乐工作、快乐生活、和谐发展</p>
+				</div>
+				<div class="footer-mid">
+					<p class="footer-title">解决方案产品</p>
+					<p class="footer-content">UbiSC智慧城市管理系统</p>
+					<p class="footer-content">UbiSZ智慧园区智能化管理系统</p>
+					<p class="footer-content">UbiFMS消防报警联网监控系统</p>			
+					<p class="footer-content">UbiRMS远程智能抄表管理系统</p>
+					<p class="footer-content">UbiTracker资产防盗定位监控系统</p>					
+				</div>
+				<div class="footer-right">
+					<p class="footer-title">联系我们</p>
+					<p class="footer-content">贵州泛联信息技术有限公司 </p>
+					<p class="footer-content">贵阳市高新区长岭南路31号国家数字内容产业园大楼4楼B区<span class="clickmap1">点击查看地图</span> </p>
+					<p class="footer-content">北京泛维智联信息技术有限公司</p>
+					<p class="footer-content">北京市海淀区上地信息路26号7层718室  <span class="clickmap2">点击查看地图</span></p>
+					<p class="footer-content">电 话(C)：010-60608488</p>
+					<p class="footer-content">传 真(F)：010-60608488</p>
+				</div>
+			</div>
+			<hr />
+			<div class="footer-bot">
+				<p class="footer-bot-p1">Copyright © 2016.UbiLink All rights reserved</p>
+				<p class="footer-bot-p2">贵州泛联信息技术有限公司&北京泛维智联信息技术有限公司版权所有</p>
+			</div>
+		</div>
+	</body>
+</html>
