@@ -1,0 +1,337 @@
+html,body{
+	width: 100%;
+}
+
+.header{
+	/*height: 600px;*/
+	width: 100%;
+}
+.nav{
+	height: 80px;
+	width: 100%;
+	top: 0;
+	margin: 0 auto;
+	/*background:red ;*/
+}
+.nav-out{
+	width: 1120px;
+	height: 100%;
+	margin: 0 auto;
+	/*background: blue;*/
+	padding: 0.1px;
+}
+h1{
+	float: left;
+	margin-left: 173px;
+	height: 80px;
+	width: 100px;
+	font-size: 0;
+	background: url(../img/logo1.png) no-repeat 0 center;
+	background-size: 100%;
+}
+h1 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nav-ul{
+	float: left;
+	margin-top: 20px;
+	margin-left: 70px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0.1px;
+
+}
+.nav-ul li{
+		float: left;
+		padding-left: 38px;
+		font-size: 14px;
+		width: 132px;
+}
+.nav-ul li a{
+	color: #333333;
+}
+.nav-ul li:last-child a{
+	color: #d92443;
+}
+.nav-ul li a:hover{
+	color: #d92443;
+}
+.underline{
+	display: block;
+	width: 56px;
+	height: 2px;
+	background: #d92443;
+	margin-left: 528px;
+}
+.headimg{
+	width: 100%;
+	height:384px;
+	background: url(../img/usbg.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+/*--------------主要内容部分--------------------*/
+.uscontent{
+	/*height: 680px;*/
+	width: 100%;
+	background: #f7f7f7;
+	padding: 0.1px;
+}
+.usContentInner{
+	/*height: 640px;*/
+	width: 1100px;
+	margin: 20px auto;
+	background: white;
+}
+.usContentInner-left{
+	width: 200px;
+	height: 100%;
+	border-right: 1px solid #efefef;
+	float: left;
+}
+.usContentInner-left>p{
+	height: 60px;
+	width: 100%;
+	font-size: 20px;
+	color: #666666;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+	margin-bottom:10px ;
+}
+.usContentInner-left>p:first-child{
+	color:#d92443 ;
+}
+.usContentInner-left>p:hover{
+	color:#d92443 !important;
+}
+.content-sp{
+	display: block;
+	width: 100%;
+	height: 10px;
+	background: url(../img/productleftbg.png) center center;
+}
+.usContentInner-right{
+	width: 898px;
+	/*height: 100%;*/
+	float: left;
+	padding: 0 25px;
+	
+}
+.uscontent-top{
+	width: 798px;
+	height: 45px;
+	margin: 25px 30px;
+}
+.top-dotted{
+	height: 2px;
+	width: 315px;
+	border-bottom: 1.5px  #7c96a4 dotted;
+	float: left;
+	margin-top: 22px;
+}
+
+.ustext{
+	color: #d92443; 
+	width: 145px;
+	height: 25px; 
+	text-align: center;
+	font-size: 18px;
+}
+.ustextE{
+	color: #7c96a4; 
+	width: 145px;
+	height: 20px;
+	text-align: center;
+}
+.uscontenttext{
+	color: #666666;
+	font-size: 14px;
+	line-height: 30px;
+	text-indent: 2em;
+}
+/*-----------address-------------*/
+.address{
+	width: 1120px;
+	height: 660px;
+	margin: 0 auto ;
+	padding: 25px 0 85px;
+	
+}
+.left{
+	float: left;
+	margin-left: -20px;
+}
+.right{
+	float: right;
+	margin-right: -20px;
+}
+.left-title{
+	line-height: 45px;
+	font-size: 21px;
+	height: 45px;
+	color: #333333;
+}
+.left-p2{
+	line-height: 30px;
+	height: 30px;
+	font-size: 15px;
+	color: #353535;
+}
+.left-p3{
+	line-height: 45px;
+	height: 45px;
+	color: #333333;
+	margin-top: 26px;
+	font-size: 21px;
+}
+.mapLeft1{
+	width: 400px;
+	height: 330px;
+}
+.mapRight1{
+	width: 400px;
+	height: 330px;
+}
+/*--------合作伙伴-------------*/
+.partner{
+	width: 1120px;
+	height: 414px;
+	margin: 0 auto;
+}
+.partner-top{
+	width: 670px;
+	height: 204px;
+	padding-top: 115px;
+	margin: 0 auto;
+	
+}
+.partner-left{
+	height: 4px;
+	width: 141px;
+	background: #474747;
+	float: left;
+	margin-top: 10px;
+}
+.partner-mid{
+	font-size: 25px;
+	color: #6e6e6e;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 120px;
+	float: left;
+	
+}
+.partner-right{
+	height: 4px;
+	width: 141px;
+	background: #474747;
+	margin-top: 10px;
+	float: left;
+}
+.partner-bot{
+	margin: 0 auto;
+	height: 156px;
+	width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.partner-bot div{
+	flex-basis: 20%;
+}
+
+/*-----------脚部-----------------*/
+.footer{
+	height: 604px;
+	width: 100%;
+	background: #2e2e2e;
+}
+.footer-top{
+	margin: 0 auto;
+	height: 374px;
+	width: 1120px;
+	display: flex;
+	color: #d8d8d8;
+	justify-content: space-between;
+	
+}
+.footer-right{
+	width: 360px;
+}
+.footer-title{
+	height: 17px;
+	font-size: 18px;
+	line-height: 18px;
+	margin-top: 85px;
+	margin-bottom: 30px;
+}
+.footer-content{
+	font-size: 14px;
+	line-height: 31px;
+}
+hr{
+	background-color: #ccc;
+	border: none;
+	height: 1.5px;
+}
+.footer-bot{
+	height: 228px;
+	width: 1120px;
+	margin: 0 auto; 
+	color: #d8d8d8;
+	font-size: 14px;
+	padding-top: 83px;	
+}
+.footer-bot-p1,.footer-bot-p2{
+	text-align: center;
+}
+.clickmap1,.clickmap2{
+	color: #d14f4f;
+	margin-left: 15px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/*---------遮布、弹出地图---------------*/
+.coverWrap{
+	width: 100%;
+	height: 100%;
+	background: rgba(90,90,90,.6);
+	position:  fixed;
+	top: 0;
+	z-index: 4;
+	display: none;
+}
+.Map{
+	height: 500px;
+	width: 1000px;
+	margin:30px auto 0;
+	border-radius: 10px 10px 0 0;
+}
+.mapFoot{
+	height: 45px;
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 0 0 10px 10px;
+	padding: 0.1px;
+}
+.closeCover{
+	height: 30px;
+	width: 50px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	border: 1px solid blue;
+	border-radius: 8px;
+	margin: 7px auto;
+	color: fuchsia;
+	font-size: 14px;
+}
+
+.closeCover:hover{
+	background: #C0C0C0;
+	color: mediumvioletred;
+}

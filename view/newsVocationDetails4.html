@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ZigBee、ZWave注意了：LoRa远距离、低功耗网络技术悄然发展</title>
+		<link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/newsvocation.css"/>
+		<script src="../js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/newsvocation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=yOttaDzPxI2g9lXAVTzFHYplp6K5ppGp" type="text/javascript"></script>
+	</head>
+	<body>
+		<!---------头部------------->
+		<div class="header">
+			<div class="nav">
+				<div class="nav-out">
+					<h1><a href="../index.html">北京泛维智联信息技术有限公司</a></h1>
+					<ul class="nav-ul">
+						<li>
+							<a href="product.html">产品中心</a>
+							<span class="underline"></span>							
+						</li>
+						<li><a href="newscenter.html">新闻中心</a></li>
+						<li><a href="wisdomCity.html">智慧城市</a></li>
+						<li><a href="wisdomYard.html">智慧园区</a></li>
+						<li><a href="us.html">关于我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="headimg"></div>
+		</div>
+		<!----------news------------->
+		<div class="newsout">
+			<div class="newscontent">
+				<div class="news-left">
+					<p class="news-left1"><a href="newscenter.html">公司动态</a></p>
+					<p class="news-left2"><a href="newsvocation.html">行业资讯</a></p>
+				</div>
+				<div class="news-right">
+					<h3 class="newsDetailsTitle">ZigBee、ZWave注意了：LoRa远距离、低功耗网络技术悄然发展</h3>
+					<div class="newsDetails">
+						<div class="newsDetailsContent">
+							<div class="newsDetailsImg">
+							  <img src="../img/newsVocationDetails07.png"/>
+						    </div>
+							<p>物联网所需的无线网络通信各类技术似乎处于互补状态，各不同场景下，距离、功耗、容量、成本等指标各有千秋。不过，在远距离、低功耗场景下似乎还没有主流的无线网络技填补空白。今天，物联网智库带您认识这一领域中一项突出的成果——LoRa（Long Range，远程）。</p>
+						    <p>本篇文章是从技术角度揭开LoRa的面纱，后续还会提供商业化和市场角度解读LoRa的文章，让您全面了解这一未来物联网领域新的通信技术</p>
+						    <div class="newsDetailsTitle_2">
+						    	LoRa
+						    </div>
+						    <p>LoRa是由升特公司（Semech）发布的一种专用于无线电调制解调的技术，它与其他如FSK（频移键控）、GMSK（高斯最小频移键控）、BPSK（二进制相移键控）及其派生的调制方案形成竞争关系。LoRa融合了数字扩频、数字信号处理和前向纠错编码技术，拥有前所未有的性能。此前，只有那些高等级的工业无线电通信会融合这些技术，而随着LoRa的引入，嵌入式无线通信领域的局面发生了彻底的改变。</p>
+						    <p>前向纠错编码技术是给待传输数据序列中增加了一些冗余信息，这样，数据传输进程中注入的错误码元在接收端就会被及时纠正。这一技术减少了以往创建“自修复”数据包来重发的需求，且在解决由多径衰落引发的突发性误码中表现良好。一旦数据包分组建立起来且注入前向纠错编码以保障可靠性，这些数据包将被送到数字扩频调制器中。这一调制器将分组数据包中每一比特馈入一个“展扩器”中，将每一比特时间划分为众多码片。LoRa调制解调器经配置后，可划分的范围为64-4096码片/比特。AngelBlocks配置调制解调器可使用4096码片/比特中的最高扩频因子（12）。相对而言，ZigBee仅能划分的范围为10-12码片/比特。</p>
+						    <p>通过使用高扩频因子，LoRa技术可将小容量数据通过大范围的无线电频谱传输出去。实际上，当你通过频谱分析仪测量时，这些数据看上去像噪音，但区别在于噪音是不相关的，而数据具有相关性，基于此，数据实际上可以从噪音中被提取出来。其实，扩频因子越高，越多数据可从噪音中提取出来。在一个运转良好的GFSK接收端，8dB的最小信噪比（SNR）需要可靠地解调信号，采用配置AngelBlocks的方式，LoRa可解调一个信号，其信噪比为-20dB，GFSK方式与这一结果差距为28dB，这相当于范围和距离扩大了很多。在户外环境下，6dB的差距就可以实现2倍于原来的传输距离。为了有效地对比不同技术之间传输范围的表现，我们使用一个叫做“链路预算”的定量指标。链路预算包括影响接收端信号强度的每一变量，在其简化体系中包括发射功率加上接收端灵敏度。AngelBlocks的发射功率为100mW (20dBm)，接收端灵敏度为-129dBm，总的链路预算为149dB。比较而言，拥有灵敏度-110dBm（这已是其极好的数据）的GFSK无线技术，需要5W的功率(37dBm)才能达到相同的链路预算值。在实践中，大多GFSK无线技术接收端灵敏度可达到-103dBm，在此状况下，发射端发射频率必须为46dBm或者大约36W，才能达到与LoRa类似的链路预算值。因此，使用LoRa技术我们能够以低发射功率获得更广的传输范围和距离，这种低功耗广域技术正是我们所需的。</p>
+						    <div class="newsDetailsTitle_2">
+						    	OpenRF协议
+						    </div>
+						    <p>目前已有很多“标准化”协议应用于家庭自动化领域，ZigBee和ZWave是两种主流的选择，另外还有6LowPan以及其他协议。大多数协议或多或少依赖无线网格（mesh）组网，有些依赖整体系统来达到合理地传输距离，不过这无法使用电池供电。</p>
+						    <p>LoRa采用点对点通信方式，实现远距离传输的目的，我们无需网格化网络。实际上，我们需要一个“轻量级”协议，适用于长期以电池供电的方式。OpenRF是为电池供电的应用而开发的，例如水表和燃气表数据读取。OpenRF为媒介接入层（MAC Layer）定义了一个标准化的界面，允许其余各种各样射频集成电路装置（RFICs）协同工作。OpenRF还提供了一个支持32位设备地址的统一网络层来保证消息传递，还有多重的网络拓扑结构。理论上来说，OpenRF也可支持无线网格组网，虽然我们目前没有那种功能性要求。OpenRF提供两个接口，其中API接口允许在一个微控制器的嵌入式应用中集成OpenRF，我们用这一界面构建了AngelBlocks的应用。另一接口为指令接口，它允许外部主控制器在串行链路上使用AT指令集来发送和接收数据包。我们的应用开发适配器在一个主机上使用指令接口控制AngelBlocks，其中Arduino和Pi适配器使用一个TTL级别的串行端口，PC/MAC适配器使用一个USB/COM端口，同一指令接口均可使用。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------->
+		<div style="width: 100%;height: 1px;margin-top: 108px;"></div>
+		<hr />
+		<!-----------合作伙伴------------------->
+		<div class="partner">
+			<div class="partner-top">
+				<span class="partner-left"></span>
+				<p class="partner-mid">合作企业</p>
+				<span class="partner-right"></span>
+			</div>
+			<div class="partner-bot">
+				<div><img src="../img/partner1.gif" alt="汉邦高科" title="汉邦高科"/></div>
+				<div><img src="../img/partner2.gif" alt="SEMTECH" title="SEMTECH"/></div>
+				<div><img src="../img/partner3.png" alt="中国电子" title="中国电子"/></div>
+				<div><img src="../img/partner4.gif" alt="TRS" title="TRS"/></div>
+				<div><img src="../img/partner5.gif" alt="TCL" title="TCL"/></div>
+				<div><img src="../img/partner6.gif" alt="LoRa" title="LoRa"/></div>
+				<div><img src="../img/partner7.gif" alt="CECT" title="CECT"/></div>
+				<div><img src="../img/partner8.gif" alt="神州数码" title="神州数码"/></div>
+				<div><img src="../img/partner9.gif" alt="海尔" title="海尔"/></div>
+				<div><img src="../img/partner10.gif" alt="太极" title="太极"/></div>				
+			</div>
+		</div> 
+			
+		<!----------底部--------------->
+		<div class="footer">
+			<div class="coverWrap">				
+				<div class="Map" id="myMap"></div>
+				<div class="mapFoot">
+					<div class="closeCover">关闭</div>
+				</div>
+			
+			</div>
+			<div class="footer-top">
+				<div class="footer-left">
+					<p class="footer-title">经营理念与价值</p>
+					<p class="footer-content">企业宗旨：万物互联，开辟物联网新时代</p>
+					<p class="footer-content">企业文化：创新、协作、和谐、敬业</p>
+					<p class="footer-content">经营理念：诚信为本 共赢为先 开拓创新 务实进取</p>
+					<p class="footer-content">发展理念：以人为本、快乐工作、快乐生活、和谐发展</p>
+				</div>
+				<div class="footer-mid">
+					<p class="footer-title">解决方案产品</p>
+					<p class="footer-content">UbiSC智慧城市管理系统</p>
+					<p class="footer-content">UbiSZ智慧园区智能化管理系统</p>
+					<p class="footer-content">UbiFMS消防报警联网监控系统</p>			
+					<p class="footer-content">UbiRMS远程智能抄表管理系统</p>
+					<p class="footer-content">UbiTracker资产防盗定位监控系统</p>					
+				</div>
+				<div class="footer-right">
+					<p class="footer-title">联系我们</p>
+					<p class="footer-content">贵州泛联信息技术有限公司 </p>
+					<p class="footer-content">贵阳市高新区长岭南路31号国家数字内容产业园大楼4楼B区<span class="clickmap1">点击查看地图</span> </p>
+					<p class="footer-content">北京泛维智联信息技术有限公司</p>
+					<p class="footer-content">北京市海淀区上地信息路26号7层718室  <span class="clickmap2">点击查看地图</span></p>
+					<p class="footer-content">电 话(C)：010-60608488</p>
+					<p class="footer-content">传 真(F)：010-60608488</p>
+				</div>
+			</div>
+			<hr />
+			<div class="footer-bot">
+				<p class="footer-bot-p1">Copyright © 2016.UbiLink All rights reserved</p>
+				<p class="footer-bot-p2">贵州泛联信息技术有限公司&北京泛维智联信息技术有限公司版权所有</p>
+			</div>
+		</div>
+	</body>
+</html>

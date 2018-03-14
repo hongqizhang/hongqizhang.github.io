@@ -1,90 +1,249 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<style type="text/css">
-			canvas{border: 1px solid cyan;}
-		</style>
+		<meta charset="utf-8" />
+		<title>UbiLink万物互联</title>
+		<meta name = "viewport"  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/home.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/swiper-3.4.0.jquery.min.js" ></script>
+		<script src="js/home.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=yOttaDzPxI2g9lXAVTzFHYplp6K5ppGp" type="text/javascript"></script>
 	</head>
-	<body>
-		<canvas id="myCanvas" width="500" height="500">sorry</canvas>
-	</body>
-	<script type="text/javascript">
-		var myCanvas = document.getElementById("myCanvas");
-		var ctx = myCanvas.getContext('2d');
-		var deg = Math.PI/180;
-		ctx.translate(250,250);
+	<body style="overflow-x: hidden;">
+		<!----------头部轮播图与导航------------->
+		<div class="header">
+			<div class="nav">
+				<div class="nav-out">
+					<h1><a href="index.html">北京泛维智联信息技术有限公司</a></h1>
+					<ul class="nav-ul">
+						<li>
+							<a href="view/product.html" target="_blank">产品中心</a>
+							<span class="underline"></span>							
+						</li>
+						<li><a href="view/newscenter.html" target="_blank">新闻中心</a></li>
+						<li><a href="view/wisdomCity.html" target="_blank">智慧城市</a></li>
+						<li><a href="view/wisdomYard.html" target="_blank">智慧园区</a></li>
+						<li><a href="view/us.html" target="_blank">关于我们</a></li>
+					</ul>
+					<div class="last-li"><span class="chain">中文</span><span class="us">English</span></div>
+				</div>
+			</div>
+			<div class="swiper-container">
+		    	<div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="img/banner.jpg" alt="" /></div>
+			        <div class="swiper-slide"><img src="img/banner2.jpg" alt="" /></div>
+			        <!--<div class="swiper-slide">Slide 3</div>-->
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+				    
+				<!-- 如果需要导航按钮 -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<!-----------滚动的新闻列表----------------->
 		
-		
-		function drawPan(){
-					//画圆盘
-		ctx.beginPath();
-		ctx.arc(0,0,250,0,Math.PI*2,true);
-		ctx.fill();
-		ctx.closePath();
-		
-		//小刻度
-		for (var i = 0; i < 60; i++) {
-			ctx.save();
+		<div class="newslide">
+			<div class="newtitle">新闻</div>
+			<div class="newslide-content">
+				<div><a href="view/newscenter.html">LoRa与NB-IoT有何不同，哪种技术市场应用更广？</a></div>
+				<div><a href="view/newscenter.html">公司总经理周洪波博士应邀参加2016数博会</a></div>
+				<div><a href="view/newsVocationDetails7.html">互联网之后的下一个风口&nbsp; 物联网各行各业带来哪些机会?</a></div>
+				<div><a href="view/newsVocationDetails5.html">科技改变生活 &nbsp;浅谈LoRa与物联网技术</a></div>
+				<div><a href="view/newsVocationDetails6.html">LoRa与NB-IoT有何不同，哪种技术市场应用更广？</a></div>
+			</div>
+		</div>
 
-			ctx.rotate(6*deg*i);
-			//画大刻度
-			ctx.beginPath();
-			ctx.moveTo(220,0);
-			ctx.lineTo(240,0);
-			ctx.lineWidth = '7';
-			ctx.lineCap = 'round';
-			ctx.strokeStyle = 'red';
-			ctx.stroke();
-			ctx.closePath();
-			ctx.restore();
-		}
-		
-		
-		for (var i = 0; i < 12; i++) {
-			ctx.save();
-			ctx.rotate(30*deg*i);
-			//画大刻度
-			ctx.beginPath();
-			ctx.moveTo(190,0);
-			ctx.lineTo(240,0);
-			ctx.lineWidth = '15';
-			ctx.lineCap = 'round';
-			ctx.strokeStyle = 'white';
-			ctx.stroke();
-			ctx.closePath();
-			ctx.restore();
-		}
-		}
-		
-		function drawPoints(){
-			//指针
-			//秒针
-			var nowDate = new Date();
-			var second = nowDate.getSeconds();
+		<!-------------我们的优势-------------------->
+		<div class="myAdvantage">
+			<div class="myAdvantage-top">我们的优势</div>
+			<div class="myAdvantage-content">
+				<div>
+					<img src="img/myadvantage1.png"/>
+					<p>团队优势</p>
+					<ul>
+						<li>卓越的海归领军人才</li>
+						<li>专业的研发团队</li>
+						<li>强大的研发能力</li>
+						<li>领先的技术创新</li>
+					</ul>					
+				</div>
+				<div>
+					<img src="img/myadvantage2.png"/>
+					<p>技术优势</p>
+					<ul class="secList">
+						<li>开放的云+端应用开发框架</li>
+						<li>敏捷高效的开发工具支持</li>
+						<li>安全稳定的物联网运营支撑平台</li>
+						<li>软硬件产品一体化的行业应用解决方案</li>
+					</ul>
+				</div>
+				<div>
+					<img src="img/myadvantage3.png"/>
+					<p>产品优势</p>
+					<ul>
+						<li>质量为先、严格管控</li>
+						<li>简单易用、部署迅速</li>
+						<li>安全可信、自主可控</li>
+						<li>模块化设计、扩展方便</li>
+					</ul>
+				</div>
+				<div>
+					<img src="img/myadvantage4.png"/>
+					<p>服务优势</p>
+					<ul class="fouList">
+						<li>全天候的在线服务</li>
+						<li>专业化的技术培训</li>
+						<li>完善的售前售后服务体系</li>
+						<li>规划、设计、实施、运维一站式服务 </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!---------------产品与服务----------------------->
+		<div class="productservice">
+			<p class="productservice-title">产品与服务</p>
+			<div class="productservice-content">
+				<div class="productservice-float productservice-float1">
+					<div class="movePart">
+					    <img src="img/product1.png" alt="" class="productservice-img"/>
+					    <p class="productservice-floatp">硬件产品</p>
+					</div>
+					<div class="productservice-none">
+						<p class="productservice-none1">物联网终端</p>
+						<p class="productservice-none2">(LoRa DTU、火灾报警、地磁车辆检测、井盖防盗报警、人员/资产定位)</p>
+						<p class="productservice-none1">物联网模块</p>
+						<p class="productservice-none2">(LoRa 1278基础模块、数据采集模块)</p>
+						<p class="productservice-none1">物联网网关</p>
+						<p class="productservice-none2">(LoRa 1278网关/LoRaWAN城市基站)</p>
+					</div>
+				</div>
+				<div class="productservice-float productservice-float2">
+					<div class="movePart">
+					    <img src="img/product2.png" alt=""  class="productservice-img"/>
+					    <p class="productservice-floatp">App产品</p>
+					</div>
+					<div class="productservice-none">
+						<p class="productservice-none3">城管通APP</p>
+						<p class="productservice-none3">园管通App</p>
+						<p class="productservice-none3">定位通APP</p>
+						<p class="productservice-none3">消防通App</p>
+					</div>
+				</div>
+				<div class="productservice-float productservice-float3">
+					<div class="movePart">
+					    <img src="img/product3.png" alt="" class="productservice-img"/>
+					    <p class="productservice-floatp">软件产品</p>
+					</div>
+					<div class="productservice-none">
+						<p class="productservice-none1">智慧城市管理系统</p>
+						<p class="productservice-none1">生态园区智能化管理系统</p>
+						<p class="productservice-none1">消防报警联网监控系统</p>
+						<p class="productservice-none1">远程智能抄表管理系统</p>
+						<p class="productservice-none1">资产防盗定位监控系统</p>					
+					</div>
+				</div>
+				<div class="productservice-float productservice-float4">
+					<div class="movePart">
+					    <img src="img/product4.png" alt="" class="productservice-img"/>
+					    <p class="productservice-floatp">云平台</p>
+					</div>
+					<div class="productservice-none">
+						<p>物联网运营支撑平台</p>
+						<p>物联网应用敏捷开发工具</p>
+					</div>
+				</div>
+				<div class="productservice-float productservice-float5">
+					<div class="movePart">
+					    <img src="img/product5.png" alt="" class="productservice-img"/>
+					    <p class="productservice-floatp">服务</p>
+					</div>
+					<div class="productservice-none">
+						<p class="productservice-none4">规划设计专家顾问服务</p>
+						<p class="productservice-none4">LoRa终端产品设计服务</p>
+						<p class="productservice-none4">物联网应用系统开发服务</p>
+						<p class="productservice-none4">LPWAN网络建设</p>
+						<p class="productservice-none4">云平台运营服务</p>
+						<p class="productservice-none4">软硬件一体化实施服务</p>				
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------底部分割线----------------------------->
+		<hr class="bootline"/>
+		<!---------合作伙伴--------------->
+		<div class="partner">
+			<div class="partner-top">
+				<span class="partner-left"></span>
+				<p class="partner-mid">合作企业</p>
+				<span class="partner-right"></span>
+			</div>
+			<div class="partner-bot">
+				<div><img src="img/partner1.gif" alt="汉邦高科" title="汉邦高科"/></div>
+				<div><img src="img/partner2.gif" alt="SEMTECH" title="SEMTECH"/></div>
+				<div><img src="img/partner3.png" alt="中国电子" title="中国电子"/></div>
+				<div><img src="img/partner4.gif" alt="TRS" title="TRS"/></div>
+				<div><img src="img/partner5.gif" alt="TCL" title="TCL"/></div>
+				<div><img src="img/partner6.gif" alt="LoRa" title="LoRa"/></div>
+				<div><img src="img/partner7.gif" alt="CECT" title="CECT"/></div>
+				<div><img src="img/partner8.gif" alt="神州数码" title="神州数码"/></div>
+				<div><img src="img/partner9.gif" alt="海尔" title="海尔"/></div>
+				<div><img src="img/partner10.gif" alt="太极" title="太极"/></div>				
+			</div>
+		</div>
+		<!-----------页脚部分----------->
+		<div class="footer">
+			<!---------------遮布、弹出地图--------------------->
+			<div class="coverWrap">				
+				<div class="Map" id="myMap"></div>
+				<div class="mapFoot">
+					<div class="closeCover">关闭</div>
+				</div>
 			
-			ctx.save();
-			ctx.rotate(second*deg*6);
-			ctx.beginPath();
-			ctx.moveTo(0,0);
-			ctx.lineTo(0,-170);
-			ctx.lineWidth = '10';
-			ctx.lineCap = 'round';
-			ctx.strokeStyle = 'yellow';
-			ctx.stroke();
-			ctx.closePath();
-			ctx.restore();
-		}
-		drawPan();
-		drawPoints();
+			</div>
+			<div class="footer-top">
+				<div class="footer-left">
+					<p class="footer-title">经营理念与价值</p>
+					<p class="footer-content">企业宗旨：万物互联，开辟物联网新时代</p>
+					<p class="footer-content">企业文化：创新、协作、和谐、敬业</p>
+					<p class="footer-content">经营理念：诚信为本 共赢为先 开拓创新 务实进取</p>
+					<p class="footer-content">发展理念：以人为本、快乐工作、快乐生活、和谐发展</p>
+				</div>
+				<div class="footer-mid">
+					<p class="footer-title">解决方案产品</p>
+					<p class="footer-content">UbiSC智慧城市管理系统</p>
+					<p class="footer-content">UbiSZ智慧园区智能化管理系统</p>
+					<p class="footer-content">UbiFMS消防报警联网监控系统</p>			
+					<p class="footer-content">UbiRMS远程智能抄表管理系统</p>
+					<p class="footer-content">UbiTracker资产防盗定位监控系统</p>					
+				</div>
+				<div class="footer-right">
+					<p class="footer-title">联系我们</p>
+					<p class="footer-content">贵州泛联信息技术有限公司 </p>
+					<p class="footer-content">贵阳市高新区长岭南路31号国家数字内容产业园大楼4楼B区<span class="clickmap1">点击查看地图</span> </p>
+					<p class="footer-content">北京泛维智联信息技术有限公司</p>
+					<p class="footer-content">北京市海淀区上地信息路26号7层718室  <span class="clickmap2">点击查看地图</span></p>
+					<p class="footer-content">电 话(C)：010-60608488</p>
+					<p class="footer-content">传 真(F)：010-60608488</p>
+				</div>
+			</div>
+			<hr />
+			<div class="footer-bot">
+				<p class="footer-bot-p1">Copyright © 2016.UbiLink All rights reserved</p>
+				<p class="footer-bot-p2">贵州泛联信息技术有限公司&北京泛维智联信息技术有限公司版权所有</p>
+			</div>
+		</div>
+		<img src="img/productbg10.jpg" alt="" style="display: none;"/>
+		<img src="img/productbg6.jpg" alt="" style="display: none;/>
+		<img src="img/productbg7.jpg" alt="" style="display: none;/>
+		<img src="img/productbg8.jpg" alt="" style="display: none;/>
+		<img src="img/productbg9.jpg" alt="" style="display: none;/>
+
 		
-		setInterval(function(){
-			ctx.clearRect(-myCanvas.width/2,-myCanvas.height/2,myCanvas.width,myCanvas.height);
-			drawPan();
-			drawPoints();
-		},1000);
-		
-		
-	</script>
+	</body>
 </html>
