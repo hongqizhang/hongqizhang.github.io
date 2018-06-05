@@ -168,8 +168,8 @@ h1 a{
 }
 /*----------新闻详情部分-----------*/
 .newsDetailsTitle{
-	font-size: 18px;
-	font-weight: normal;
+	font-size: 24px;
+	font-weight: 700;
 	width: 100%;
 	text-align: center;
 	margin:30px 0 20px 0;
@@ -188,18 +188,19 @@ h1 a{
 	width: 865px;
 	min-height: 20px;
 	margin:9px auto;
-	color:#9b9b9b;
+	color:#666;
 	font-size: 14px;
 }
 .newsDetailsContent p{
-	line-height: 30px;
+	line-height: 34px;
 	text-indent: 2em;
+	font-size: 16px;
 }
 .newsDetailsTitle_2{
 	color:#666666;
-	font-weight: bold;
-	font-size: 15px;
-	line-height: 40px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 60px;
 }
 .newsDetailsTitle_3{
 	font-weight: normal;
@@ -365,7 +366,14 @@ hr{
 .newsDetails{
 	min-height: 20px;
 }
-
+.titleCenter{
+	font-size: 21px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 40px;
+	color: #555;
+	margin-top: 10px;
+}
 
 
 
